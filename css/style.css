@@ -37,11 +37,14 @@ body {
 .card__image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 3% 3% 0 0%;
 }
 
 .card__article {
-    padding: 5%
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .article__intro {
@@ -108,18 +111,8 @@ body {
 @media screen and (min-width: 1440px) {
     .card {
         flex-direction: row;
-        max-width: 70%;
+        max-height: 475px;
+        max-width: 700px;
     }
-    .card__image {
-        display: none !important;
-    }
-    .card__image--desktop {
-        display: flex !important;
-        width: 70%;
-        border-radius: 3% 0 0 3%;
-    }
-    .card__article {
-        margin-bottom: 25%;
-        justify-content: space-around;
-    }
+    .card__image {}
 }
