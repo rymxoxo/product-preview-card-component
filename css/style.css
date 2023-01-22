@@ -125,8 +125,9 @@ body {
     }
     .card__image--desktop {
         display: block !important;
-        height: 100%;
-        width: 100%;
+        max-height: 475px;
+        max-width: 700px;
+        background-size: cover;
         border-radius: 3% 0% 0 3%;
     }
 }
