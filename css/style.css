@@ -24,6 +24,12 @@ body {
     background-color: var(--color-secondary);
 }
 
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -114,5 +120,7 @@ body {
         max-height: 475px;
         max-width: 700px;
     }
-    .card__image {}
+    .card__image {
+        object-fit: cover;
+    }
 }
