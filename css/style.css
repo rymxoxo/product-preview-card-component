@@ -91,7 +91,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--color-primary);
-    padding: 1rem 3rem;
     border-radius: 1rem;
 }
 
@@ -101,19 +100,19 @@ body {
     font-weight: 400;
     text-align: center;
     font-weight: 700;
-    background-color: var(--color-primary);
 }
 
-.button:hover {
+.button:hover,
+.article__button:hover {
     background-color: var(--color-headings);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .button--icon {
-    size: 50%;
     color: white;
     padding-right: 3%;
+    align-self: center;
 }
 
 @media screen and (min-width: 1024px) {
